@@ -46,8 +46,6 @@ $ ./all.sh
 ## How to use this for your data
 
 The data is saved in Dropbox. The data for public will be opened soon,
-	-for static data, refer to https://github.com/weisongwen/IONPlans2018
-	- for dynamic data, refer to Dropbox
 
 
 ## Research Papers for Reference
