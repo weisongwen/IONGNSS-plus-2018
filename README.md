@@ -1,33 +1,56 @@
-# 10_NLOS_Correction_ (This package is undergoing now, which has not been finished.)
-Improve GNSS positioning solution considering the dynamic environment features. In summary, this is a dynamic experiment
+# Package for: Fault detection and corrention aided by point clouds-based perception (for surroundings with high altitude)
+
+- Point clouds based object detection
+- Fault detection, exclusion (FDE) and correction
+- GNSS single point positioning with weighted least square (WLS) in python
+- Skyplot visualization
+- Positioning result visualization in python
+- INS data for heading, transform the dynamic objects into skyplot
+
+## Spec Recommendation
+
+- Number of CPU cores: 4
+- RAM size: 16GB
+- Storage size: 30GB in SSD
+
+## Requirements
+
+- ROS jade (Ubuntu 14.04)
+- Qt 5.2.1 or higher
+
+### Install dependencies for Ubuntu 14.04 jade
+
+install all the dependency when needed
 
 
-## Package summary
 
-*10_NLOS_Correction_* is a ROS node proceeding GNSS positioning improvement. 
-
-## Algorithms
-
-A fundamental algorithm of *10_NLOS_Correction_* node is object detection and GNSS positioning. Some improvement is proposed here.
-
-## Running the demo
-
-Still on process..
+## How to Build
 
 ```
-Input: 
---3D point cloud
---GNSS data 
---span-CPT
-
-Output:
---GNSS positioning 
---Skyplot
---Dynamic boundaries
+$ cd $HOME
+$ mkdir yourpackage/src
+$ cd yourpackage/src
+$ git clone https://github.com/weisongwen/IONGNSS-plus-2018.git
+$ catkin_init_workspace
+$ cd ..
+$ catkin_make
 ```
-## License
 
-*10_NLOS_Correction_* is available under BSD license.
-contact: wenwsrobo@gmail.com
-# 10_NLOS_Correction_
-NLOS Correction
+## How to Start
+
+```
+$ cd $HOME/yourpackage/src
+$ ./all.sh
+```
+
+## How to use this for your data
+
+The data is saved in Dropbox. The data for public will be opened soon,
+	-for static data, refer to https://github.com/weisongwen/IONPlans2018
+	- for dynamic data, refer to Dropbox
+
+
+## Research Papers for Reference
+
+1. Weisong Wen, Guohao Zhang and Li-Ta Hsu, Correcting GNSS NLOS by 3D LiDAR and Building Height, ION GNSS+ 2018, Miami, Florida, USA (to be presented) 
+
